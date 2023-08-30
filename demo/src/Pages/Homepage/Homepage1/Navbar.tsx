@@ -293,6 +293,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Product",
     children: [
       {
+        label: "Machine Loan",
+        href: "/machineLoan",
+      },
+      {
         label: "Business Loans",
         href: "#",
       },
