@@ -1,7 +1,12 @@
+.left-aligned-text {
+  text-align: left !important;
+}
+
+
 .App {
   text-align: center;
   background-color: "#130f24";
-   color: "white"
+  color: "white"
 }
 
 .App-logo {
@@ -34,6 +39,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
