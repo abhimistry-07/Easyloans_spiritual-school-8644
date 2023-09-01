@@ -28,12 +28,20 @@ import {
   SunIcon,
 } from "@chakra-ui/icons";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  const navigate = useNavigate();
   //   darkblue	#00008B
   //   navy	#000080
   //   midnightblue	#191970
+
+  function handleClick() {
+    navigate("/");
+  }
+
   return (
     <Box bgColor={colorMode}>
       <Flex
@@ -70,6 +78,7 @@ export default function Navbar() {
             <Image
               src={require("../HomePage2/Utiles/EasyLoan Logo.jpg")}
               w="130px"
+              onClick={handleClick}
             />
           </Text>
 

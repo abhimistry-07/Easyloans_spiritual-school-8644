@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Text, Flex, Spacer, Grid, Link } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { css } from "@emotion/react";
 
 export default function OurFeatures() {
   return (
@@ -17,15 +18,17 @@ export default function OurFeatures() {
       </Box>
       <Grid
         className="sub-container2"
-        templateColumns={{ base: "58% 40%", }}
-        // "58% 40%"
-
-        // base: "0 0 35px 0", md: "0 0 0 50px"
+        templateColumns={{ base: "58% 40%" }}
         gap={"2%"}
         w="90%"
         m="auto"
         marginTop={"75px"}
         textAlign="start"
+        css={css`
+          @media (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        `}
       >
         <Box
           className="left-part"
